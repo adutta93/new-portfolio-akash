@@ -7,6 +7,7 @@ export default function Nextra({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <link rel="shortcut icon" href="/alpha.jpg" />
         {/* <link
           rel="alternate"
           type="application/rss+xml"
