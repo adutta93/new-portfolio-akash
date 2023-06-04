@@ -6,26 +6,29 @@ date: 2021-03-18
 
 # Projects
 
-Here's some of my photography.
-
 import Image from 'next/image'
 
-<Image
-  src="/images/photo2.jpg"
-  alt="Photo"
-  width={1125}
-  height={750}
-  priority
-  className="next-image"
-/>
-[Unsplash ↗ ](https://unsplash.com/photos/WeYamle9fDM)
-
-<Image
-  src="/images/photo.jpg"
-  alt="Photo"
-  width={1125}
-  height={750}
-  priority
-  className="next-image"
-/>
-[Unsplash ↗ ](https://unsplash.com/photos/ndN00KmbJ1c)
+<div className="project-container">
+  <div className="project-card">
+    <a href="https://akashdutta.hashnode.dev/data-partitioning">
+      <div className="project-card-content">
+        <Image
+          src="/images/photo2.jpg"
+          alt="Photo"
+          width={200}
+          height={130}
+          priority
+          className="next-image"
+        />{' '}
+        <h3>Data Partitioning</h3>
+        <div className="project-author">
+          May 14, 2023<span className="project-read">3 min read</span>
+        </div>
+        <div className="project-content_body">
+          Data partitioning is a technique that splits a database into smaller
+          chunks, both row-wise and column-wise....
+        </div>
+      </div>
+    </a>
+  </div>
+</div>

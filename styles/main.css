@@ -75,6 +75,10 @@ img.next-image {
   display: grid;
   cursor: pointer;
   grid-template-column: repeat(5, 1fr);
+  text-decoration: none;
+}
+.card a:link {
+  text-decoration: none;
 }
 
 .card-content {
@@ -98,6 +102,9 @@ h1 {
 .card-content .read {
   margin-left: 25px;
 }
+.card-content .content_body {
+  margin-top: -5px;
+}
 
 @media only screen and (max-width: 600px) {
   .card {
@@ -106,6 +113,56 @@ h1 {
 
   .card-content {
     border: 0;
-    border-top: 1px solid #ccc;
+  }
+}
+
+/* Project Card style */
+
+.project-card {
+  background-color: #fff;
+  max-width: 800px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  display: grid;
+  cursor: pointer;
+  grid-template-column: repeat(5, 1fr);
+  text-decoration: none;
+}
+.project-card a:link {
+  text-decoration: none;
+}
+
+.project-card-content {
+  grid-column: 3 / 5;
+  padding: 5px 30px;
+}
+h2 {
+  text-transform: uppercase;
+  color: #555;
+}
+h1 {
+  margin-bottom: 0;
+}
+.project-card-content .project-author {
+  font-size: 13px;
+  margin-top: -25px;
+  margin-right: 5px;
+  padding: 5px 0 10px 0;
+  color: #b4b4b4;
+}
+.project-card-content .project-read {
+  margin-left: 25px;
+}
+.project-card-content .project-content_body {
+  margin-top: -5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .project-card {
+    display: block;
+  }
+
+  .project-card-content {
+    border: 0;
   }
 }
