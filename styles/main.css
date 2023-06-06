@@ -110,6 +110,7 @@ h1 {
 }
 .card-content .content_body {
   margin-top: -5px;
+  padding: 5px 0 10px 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -242,3 +243,78 @@ img {
 /* .project_user__info > small {
   color: #666;
 } */
+
+/* Experience */
+
+.exp_card {
+  background-color: #fff;
+  max-width: 800px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  display: grid;
+  cursor: pointer;
+  grid-template-column: repeat(5, 1fr);
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.exp_card a:link {
+  text-decoration: none;
+}
+
+.exp_card-content {
+  /* These styling has to change when detail description is added */
+
+  /* change  grid-column to 3/5 */
+  grid-column: 2 / 124;
+
+  /* change  padding to to 5px 30px */
+  padding: 30px 30px;
+  margin-top: -35px;
+}
+h2 {
+  text-transform: uppercase;
+  color: #555;
+}
+h1 {
+  margin-bottom: 0;
+}
+.exp_card-content .author {
+  font-size: 13px;
+  margin-top: -15px;
+  margin-right: 5px;
+  padding: 5px 0 10px 0;
+  color: #b4b4b4;
+}
+
+.exp_card-content .place {
+  font-size: 13px;
+  margin-top: -15px;
+  margin-right: 5px;
+  padding: 5px 0 10px 0;
+  color: #b4b4b4;
+}
+.exp_card-content .company {
+  margin-top: -15px;
+  font-weight: 400;
+}
+
+.exp_card-content .read {
+  margin-left: 25px;
+}
+.exp_card-content .content_body {
+  margin-top: -25px;
+}
+
+.exp_card__image {
+  margin-left: 15px;
+  margin-right: -15px;
+}
+@media only screen and (max-width: 600px) {
+  .exp_card {
+    display: block;
+  }
+
+  .exp_card-content {
+    border: 0;
+  }
+}
